@@ -21,6 +21,7 @@ class HangpersonGame
   end
 
   def guess(new_guess)
+    new_guess = new_guess.downcase
   	if new_guess == nil or not new_guess =~ /^[a-z]+$/i or new_guess.empty?
   		raise ArgumentError
   	elsif not @guesses.include? new_guess and not @wrong_guesses.include? new_guess
