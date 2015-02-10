@@ -29,9 +29,9 @@ class HangpersonGame
 	  	else
 	  		@wrong_guesses = @wrong_guesses + new_guess
 	  	end
-	else
-		return false
-	end
+	  else
+		  return false
+	  end
   end
 
   def word_with_guesses
